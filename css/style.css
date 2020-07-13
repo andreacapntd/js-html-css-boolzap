@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /* <!-- Contenitore generale --> */
 .wrapper {
   height: 100vh;
@@ -86,7 +94,7 @@ main {
 }
 
 #message-box .emoticon .fa-smile {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: grey;
 }
 
@@ -94,14 +102,23 @@ main {
   width: 600px;
   height: 35px;
   border-radius: 30px;
-  margin-left: 10px;
+  margin: 0 15px;
   padding-left: 10px;
   border: none;
   outline: none;
 }
 
-#message-box .send .fa-microphone {
-  font-size: 2rem;
+.send-btn .record  {
+  font-size: 1.5rem;
   color: grey;
-  margin-left: 10px;
+  margin-left: 15px;
+
+}
+
+.send-btn .enter {
+  display: none;
+}
+
+#message-box .send-btn .enter img {
+  height: 20px;
 }
