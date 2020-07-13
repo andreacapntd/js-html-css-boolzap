@@ -125,20 +125,24 @@ main {
   background-size: cover;
 }
 
-.user-mex {
+
+.speaker-side {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+  padding-top: 70px;
+}
+
+.speaker-mex {
   height: fit-content;
   width: fit-content;
   padding: 6px 7px 8px 9px;
   border-radius: 7.5px;
   margin-bottom: 80px;
-  background-color: #dcf8c6;
-}
-
-.speaker-side {
-  float: left;
-  height: 100%;
-  width: 50%;
-  padding: 30px;
+  background-color: #fff;
 }
 
 .user-side {
@@ -149,6 +153,15 @@ main {
   height: 100%;
   width: 50%;
   padding: 30px;
+}
+
+.user-mex {
+  height: fit-content;
+  width: fit-content;
+  padding: 6px 7px 8px 9px;
+  border-radius: 7.5px;
+  margin-bottom: 80px;
+  background-color: #dcf8c6;
 }
 
 /* <!--box per scrivere messaggi --> */
