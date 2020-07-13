@@ -71,13 +71,37 @@ main {
   height: calc(100% - 140px);
   width: 100%;
   overflow: auto;
-  /* debug */
-  background-color: yellow;
+  background-image: url(https://i.imgur.com/bc3eMdZ.png);
+  background-size: cover;
 }
+
 /* <!--box per scrivere messaggi --> */
 #message-box {
+  display: flex;
+  align-items: center;
   height: 70px;
   width: 100%;
-  /* debug */
-  background-color: blue;
+  padding: 0 10px;
+  background-color: #ededed;
+}
+
+#message-box .emoticon .fa-smile {
+  font-size: 2rem;
+  color: grey;
+}
+
+#message-box .txt-box #txt-form {
+  width: 600px;
+  height: 35px;
+  border-radius: 30px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+#message-box .send .fa-microphone {
+  font-size: 2rem;
+  color: grey;
+  margin-left: 10px;
 }
