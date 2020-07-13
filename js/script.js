@@ -8,7 +8,7 @@ function showButtonSend() {
 function showUserMex() {
   $('#message-box .send-btn  img').click(function (){
     var userMex = $('#txt-form').val();
-    $('.user-mex > p').append(userMex);
+    $('#my-mex > p').append(userMex);
     $('.user-mex').removeClass('hide');
   });
 }

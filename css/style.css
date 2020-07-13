@@ -130,6 +130,7 @@ main {
   width: fit-content;
   padding: 6px 7px 8px 9px;
   border-radius: 7.5px;
+  margin-bottom: 80px;
   background-color: #dcf8c6;
 }
 
@@ -143,7 +144,8 @@ main {
 .user-side {
   float: left;
   display: flex;
-  flex-direction: row-reverse;
+  align-items: flex-end;
+  flex-direction: column;
   height: 100%;
   width: 50%;
   padding: 30px;
