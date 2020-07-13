@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+p, span {
+  font-family: 'Roboto', sans-serif;
+}
+
 .show {
   display: block;
 }
@@ -69,9 +73,47 @@ main {
 
 /* <!-- nav del profilo ed azioni --> */
 #profile-action-nav {
+  display: flex;
   height: 70px;
-  /* debug */
-  background-color: red;
+  padding: 0 15px;
+  background-color: #ededed;
+}
+
+#profile-action-nav .nav-left {
+  display: flex;
+  align-items: center;
+  width: 50%
+}
+
+#profile-action-nav .nav-left img {
+  height: 4rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#profile-action-nav .profile-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#last-access {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+#profile-action-nav .nav-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#profile-action-nav .nav-right a i {
+  font-size: 1.5rem;
+  color: grey;
+  margin-left: 20px;
 }
 
 /* <!-- corpo chat --> */
@@ -82,12 +124,31 @@ main {
   background-image: url(https://i.imgur.com/bc3eMdZ.png);
   background-size: cover;
 }
+
 .user-mex {
-  max-width: 20%;
+  height: fit-content;
+  width: fit-content;
   padding: 6px 7px 8px 9px;
   border-radius: 7.5px;
   background-color: #dcf8c6;
 }
+
+.speaker-side {
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+}
+
+.user-side {
+  float: left;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+}
+
 /* <!--box per scrivere messaggi --> */
 #message-box {
   display: flex;
