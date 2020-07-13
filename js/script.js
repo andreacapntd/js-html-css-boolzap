@@ -5,7 +5,13 @@ function showButtonSend() {
   });
 }
 
-
+function showUserMex() {
+  $('#message-box .send-btn  img').click(function (){
+    var userMex = $('#txt-form').val();
+    $('.user-mex > p').append(userMex);
+    $('.user-mex').removeClass('hide');
+  });
+}
 
 
 
@@ -26,6 +32,7 @@ function showButtonSend() {
 
 function init() {
   showButtonSend();
+  showUserMex();
 };
 
 

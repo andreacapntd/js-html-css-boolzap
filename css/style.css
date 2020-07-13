@@ -82,7 +82,12 @@ main {
   background-image: url(https://i.imgur.com/bc3eMdZ.png);
   background-size: cover;
 }
-
+.user-mex {
+  max-width: 20%;
+  padding: 6px 7px 8px 9px;
+  border-radius: 7.5px;
+  background-color: #dcf8c6;
+}
 /* <!--box per scrivere messaggi --> */
 #message-box {
   display: flex;
@@ -97,9 +102,12 @@ main {
   font-size: 1.5rem;
   color: grey;
 }
+#message-box .txt-box {
+  width: 95%;
+}
 
 #message-box .txt-box #txt-form {
-  width: 600px;
+  width: 95%;
   height: 35px;
   border-radius: 30px;
   margin: 0 15px;
@@ -111,14 +119,12 @@ main {
 .send-btn .record  {
   font-size: 1.5rem;
   color: grey;
-  margin-left: 15px;
-
 }
 
 .send-btn .enter {
   display: none;
 }
 
-#message-box .send-btn .enter img {
-  height: 20px;
+#message-box .send-btn  img {
+  height: 23px;
 }
