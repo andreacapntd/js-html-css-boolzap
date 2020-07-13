@@ -41,3 +41,43 @@ main {
   margin: 0 auto;
   background-color: white;
 }
+
+/* <!-- navigazione e ricerca contatti --> */
+#contacts {
+  float: left;
+  width: 250px;
+  height: 100%;
+  /* debug */
+  background-color: pink;
+}
+
+/* <!-- sezione nav e corpo chat --> */
+#main-content {
+  float: left;
+  height: 100%;
+  width: calc(100% - 250px);
+  overflow: auto;
+}
+
+/* <!-- nav del profilo ed azioni --> */
+#profile-action-nav {
+  height: 70px;
+  /* debug */
+  background-color: red;
+}
+
+/* <!-- corpo chat --> */
+#chat-box {
+  height: calc(100% - 140px);
+  width: 100%;
+  overflow: auto;
+  /* debug */
+  background-color: yellow;
+}
+/* <!--box per scrivere messaggi --> */
+#message-box {
+  height: 70px;
+  width: 100%;
+  /* debug */
+  background-color: blue;
+}
