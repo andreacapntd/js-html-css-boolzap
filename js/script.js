@@ -1,6 +1,6 @@
 function showButtonSend() {
   $('#txt-form').keydown(function(){
-    $('.send-btn .enter').removeClass('enter');
+    $('.send-btn .enter').removeClass('hide');
     $('.send-btn .record').addClass('hide');
   });
 }
@@ -13,6 +13,8 @@ function showUserMex() {
     template.find('#message-text').text(userMex);
     target.append(template);
     $('#txt-form').val('');
+    $('.send-btn .record').removeClass('hide');
+    $('.send-btn .enter').addClass('hide');
     setTimeout(showSpeakerMex(),1000);
   });
 }

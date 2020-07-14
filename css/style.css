@@ -239,9 +239,7 @@ main {
   color: grey;
 }
 
-.send-btn .enter {
-  display: none;
-}
+
 
 #message-box .send-btn  img {
   height: 23px;
