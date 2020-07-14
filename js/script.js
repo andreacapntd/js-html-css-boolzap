@@ -8,7 +8,6 @@ function showButtonSend() {
 function showUserMex() {
   $('#message-box .send-btn  img').click(function (){
     var template = $('#my-mex > div').clone();
-    console.log(template);
     var target = $('.user-side');
     var userMex = $('#txt-form').val();
     template.find('#message-text').text(userMex);
@@ -25,7 +24,13 @@ function showSpeakerMex() {
   // var speakerMex = $('#message-text-speaker');
 }
 
-
+function showOptionMex() {
+  var target = $('.fa-chevron-down');
+  var option = $('.option');
+  target.click(function() {
+    $(option).toggleClass('hide', 'show');
+  });
+}
 
 
 
@@ -43,6 +48,7 @@ function showSpeakerMex() {
 function init() {
   showButtonSend();
   showUserMex();
+  showOptionMex();
 };
 
 
