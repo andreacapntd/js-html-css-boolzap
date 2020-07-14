@@ -52,8 +52,7 @@ main {
   float: left;
   width: 350px;
   height: 100%;
-  /* debug */
-  background-color: pink;
+  background-color: #ededed;
 }
 
 .my-profile {
@@ -127,6 +126,10 @@ main {
   border-bottom: 1px solid lightgrey;
 }
 
+.contact .logo-contact {
+  width: 20%;
+}
+
 .contact .logo-contact img {
   height: 4.2rem;
   border-radius: 50%;
@@ -136,6 +139,7 @@ main {
 .contact .contact-information {
   display: flex;
   flex-direction: column;
+  width: 60%;
   margin-left: 10px;
 }
 
