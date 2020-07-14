@@ -15,14 +15,17 @@ function showUserMex() {
     $('#txt-form').val('');
     $('.send-btn .record').removeClass('hide');
     $('.send-btn .enter').addClass('hide');
-    setTimeout(showSpeakerMex(),1000);
+    showSpeakerMex();
   });
 }
 
 function showSpeakerMex() {
-  var template = $('#his-mex > div').clone();
-  var target = $('.speaker-side');
-  target.append(template);
+  setTimeout(function () {
+    var template = $('#his-mex > div').clone();
+    var target = $('.speaker-side');
+    target.append(template);
+
+  }, 1000);
   // var speakerMex = $('#message-text-speaker');
 }
 
