@@ -9,13 +9,6 @@ p, span {
   font-family: 'Roboto', sans-serif;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
 
 /* <!-- Contenitore generale --> */
 .wrapper {
@@ -136,13 +129,66 @@ main {
   padding-top: 70px;
 }
 
-.speaker-mex {
+.speaker-mex, .user-mex {
+  display: flex;
+  position: relative;
   height: fit-content;
   width: fit-content;
   padding: 6px 7px 8px 9px;
   border-radius: 7.5px;
   margin-bottom: 80px;
   background-color: #fff;
+}
+.speaker-mex i, .user-mex i {
+  display: none;
+}
+
+.speaker-mex:hover i, .user-mex:hover i {
+  display: block;
+  cursor: pointer;
+}
+
+.speaker-mex p, .user-mex p {
+  margin-right: 8px;
+}
+
+.speaker-mex .time, .user-mex .time {
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -59px;
+  right: -35px;
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.user-mex .option{
+  right: 0;
+}
+.mex-info {
+  margin-bottom: 10px;
+}
+
+.mex-info, .mex-delete {
+  cursor: pointer;
 }
 
 .user-side {
@@ -156,13 +202,9 @@ main {
 }
 
 .user-mex {
-  height: fit-content;
-  width: fit-content;
-  padding: 6px 7px 8px 9px;
-  border-radius: 7.5px;
-  margin-bottom: 80px;
   background-color: #dcf8c6;
 }
+
 
 /* <!--box per scrivere messaggi --> */
 #message-box {
