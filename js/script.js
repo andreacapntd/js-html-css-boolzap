@@ -11,6 +11,7 @@ function showUserMex() {
     var target = $('.user-side');
     var userMex = $('#txt-form').val();
     template.find('#message-text').text(userMex);
+    template.find('#mex-time').text(getActualHour());
     target.append(template);
     $('#txt-form').val('');
     $('.send-btn .record').removeClass('hide');
@@ -23,6 +24,7 @@ function showSpeakerMex() {
   setTimeout(function () {
     var template = $('#his-mex > div').clone();
     var target = $('.speaker-side');
+    template.find('#mex-time').text(getActualHour());
     target.append(template);
 
   }, 1000);
@@ -37,7 +39,10 @@ function showOptionMex() {
   });
 }
 
-
+function getActualHour() {
+  var date = new Date();
+  return date.getHours() + ':' + date.getMinutes();
+}
 
 
 
