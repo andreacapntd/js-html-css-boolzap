@@ -9,8 +9,8 @@ function showButtonSend() {
 }
 
 
-//funzione per invio mex utente
-function showUserMex() {
+//funzione per invio mex utente con click
+function showUserMexClick() {
 
   $('#message-box .send-btn  img').click(function (){
 
@@ -30,6 +30,29 @@ function showUserMex() {
     showSpeakerMex();
   });
 }
+
+//funzione per invio mex utente con invio
+function showUserMexKey() {
+  $('#txt-form').keyup(function() {
+    if ( event.which == 13 ) {
+      var template = $('#my-mex > div').clone();
+      var target = $('.user-side.active');
+      var userMex = $('#txt-form').val();
+
+      template.find('#message-text').text(userMex);
+      template.find('#mex-time').text(getActualHour());
+
+      target.append(template);
+
+      $('#txt-form').val('');
+      $('.send-btn .record').removeClass('hide');
+      $('.send-btn .enter').addClass('hide');
+
+      showSpeakerMex();
+    }
+  })
+}
+
 
 //funzione per invio messaggio interlocutore
 function showSpeakerMex() {
@@ -163,10 +186,11 @@ function showContactChat() {
 
 function init() {
   showButtonSend();
-  showUserMex();
+  showUserMexClick();
   showOptionMex();
   showSearchContacts();
   showContactChat();
+  showUserMexKey();
 };
 
 
