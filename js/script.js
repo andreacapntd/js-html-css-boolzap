@@ -100,13 +100,24 @@ function clickUtente() {
     }
   })
 };
-
-
-
-
 function showContactChat() {
   $(document).on('click', '.contact', clickUtente);
 }
+
+//funzione per cancellare il messaggio
+function deleteMex() {
+  $(document).on('click', '.mex-delete', function () {
+    var speakerMex = $('#his-mex');
+    var userMex = $('#my-mex');
+    $(this).remove(speakerMex);
+    $(this).remove(userMex);
+
+  });
+}
+
+
+
+
 
 
 
