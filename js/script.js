@@ -187,10 +187,10 @@ function showContactChat() {
 function init() {
   showButtonSend();
   showUserMexClick();
+  showUserMexKey();
   showOptionMex();
   showSearchContacts();
   showContactChat();
-  showUserMexKey();
 };
 
 
