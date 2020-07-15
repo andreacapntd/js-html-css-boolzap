@@ -122,8 +122,12 @@ main {
   padding: 0 15px;
   height: 80px;
   width: 100%;
-  background-color: #ededed;
+  background-color: white;
   border-bottom: 1px solid lightgrey;
+}
+
+.contact.active {
+  background-color: #ededed;
 }
 
 .contact .logo-contact {
@@ -220,6 +224,7 @@ main {
   background-image: url(https://i.imgur.com/bc3eMdZ.png);
   background-size: cover;
 }
+
 
 
 .speaker-side {

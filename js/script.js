@@ -41,8 +41,6 @@ function showOptionMex() {
   });
 };
 
-
-
 //funzione per orario messaggio
 function getActualHour() {
   var date = new Date();
@@ -69,7 +67,16 @@ function searchKeyup() {
   })
 }
 
+//funzione per cambiare utente e chat
+function clickUtente() {
+  $('.contact').removeClass('active');
+  $(this).addClass('active');
+}
 
+
+function showContactChat() {
+  $('.contact').click(clickUtente);
+}
 
 
 
@@ -84,7 +91,8 @@ function init() {
   showButtonSend();
   showUserMex();
   showOptionMex();
-  showSearchContacts()
+  showSearchContacts();
+  showContactChat();
 };
 
 
