@@ -10,7 +10,7 @@ function showButtonSend() {
 function showUserMex() {
   $('#message-box .send-btn  img').click(function (){
     var template = $('#my-mex > div').clone();
-    var target = $('.user-side');
+    var target = $('.user-side.active');
     var userMex = $('#txt-form').val();
     template.find('#message-text').text(userMex);
     template.find('#mex-time').text(getActualHour());
@@ -26,7 +26,7 @@ function showUserMex() {
 function showSpeakerMex() {
   setTimeout(function () {
     var template = $('#his-mex > div').clone();
-    var target = $('.speaker-side');
+    var target = $('.speaker-side.active');
     template.find('#mex-time').text(getActualHour());
     target.append(template);
 
