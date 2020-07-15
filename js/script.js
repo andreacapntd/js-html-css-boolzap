@@ -69,8 +69,37 @@ function searchKeyup() {
 
 //funzione per cambiare utente e chat
 function clickUtente() {
+
   $('.contact').removeClass('active');
   $(this).addClass('active');
+
+  var contactDataValue = $(this).data('id');
+
+  
+  var userMex = $('.user-side');
+  var speakerMex = $('.speaker-side');
+
+  userMex.each(function() {
+    var user = $(this);
+    var userMexDataValue = $(user).data('id');
+    if (userMexDataValue == contactDataValue) {
+      user.show();
+    } else {
+      user.hide();
+    }
+
+    speakerMex.each(function() {
+      var speaker = $(this);
+      var speakerMexDataValue = $(speaker).data('id');
+      if (speakerMexDataValue == contactDataValue) {
+        speaker.show();
+      } else {
+        speaker.hide();
+      }
+    })
+
+  })
+
 }
 
 

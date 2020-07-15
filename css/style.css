@@ -124,6 +124,7 @@ main {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid lightgrey;
+  cursor: pointer;
 }
 
 .contact.active {
@@ -235,6 +236,7 @@ main {
   width: 50%;
   padding: 30px;
   padding-top: 70px;
+  display: none;
 }
 
 .speaker-mex, .user-mex {
@@ -300,13 +302,14 @@ main {
 }
 
 .user-side {
-  float: left;
   display: flex;
+  float: left;
   align-items: flex-end;
   flex-direction: column;
   height: 100%;
   width: 50%;
   padding: 30px;
+  display: none;
 }
 
 .user-mex {
