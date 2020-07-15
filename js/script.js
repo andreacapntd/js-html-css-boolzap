@@ -36,12 +36,12 @@ function showSpeakerMex() {
 
 //funzione per mostrare le opzioni del messaggio
 function showOptionMex() {
-  var target = $('.fa-chevron-down');
-  var option = $('.option');
-  target.click(function() {
-    $(option).toggleClass('hide', 'show');
+  $(document).on('click', '.fa-chevron-down', function() {
+    $(this).find('.option').toggleClass('hide');
   });
-}
+};
+
+
 
 //funzione per orario messaggio
 function getActualHour() {
@@ -54,7 +54,6 @@ function showSearchContacts() {
   var target = $('#search-bar');
   target.keyup(searchKeyup);
 }
-
 function searchKeyup() {
   var input = $(this);
   var txt = input.val();
@@ -69,6 +68,7 @@ function searchKeyup() {
     }
   })
 }
+
 
 
 
