@@ -75,7 +75,7 @@ function clickUtente() {
 
   var contactDataValue = $(this).data('id');
 
-  
+
   var userMex = $('.user-side');
   var speakerMex = $('.speaker-side');
 
@@ -83,28 +83,29 @@ function clickUtente() {
     var user = $(this);
     var userMexDataValue = $(user).data('id');
     if (userMexDataValue == contactDataValue) {
-      user.show();
+      user.addClass('active');
     } else {
-      user.hide();
+      user.removeClass('active');
     }
-
-    speakerMex.each(function() {
-      var speaker = $(this);
-      var speakerMexDataValue = $(speaker).data('id');
-      if (speakerMexDataValue == contactDataValue) {
-        speaker.show();
-      } else {
-        speaker.hide();
-      }
-    })
-
   })
 
-}
+  speakerMex.each(function() {
+    var speaker = $(this);
+    var speakerMexDataValue = $(speaker).data('id');
+    if (speakerMexDataValue == contactDataValue) {
+      speaker.addClass('active');
+
+    } else {
+      speaker.removeClass('active');
+    }
+  })
+};
+
+
 
 
 function showContactChat() {
-  $('.contact').click(clickUtente);
+  $(document).on('click', '.contact', clickUtente);
 }
 
 

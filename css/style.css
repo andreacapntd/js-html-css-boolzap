@@ -229,14 +229,17 @@ main {
 
 
 .speaker-side {
+  display: none;
   float: left;
-  display: flex;
   flex-direction: column;
   height: 100%;
   width: 50%;
   padding: 30px;
   padding-top: 70px;
-  display: none;
+}
+
+.speaker-side.active {
+  display: flex;
 }
 
 .speaker-mex, .user-mex {
@@ -302,14 +305,17 @@ main {
 }
 
 .user-side {
-  display: flex;
+  display: none;
   float: left;
   align-items: flex-end;
   flex-direction: column;
   height: 100%;
   width: 50%;
   padding: 30px;
-  display: none;
+}
+
+.user-side.active {
+  display: flex;
 }
 
 .user-mex {
