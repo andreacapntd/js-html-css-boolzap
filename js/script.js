@@ -177,7 +177,9 @@ function deleteMessage() {
 
   var destroy = $(this);
   var message = destroy.parents('.destroy');
+
   message.remove();
+
 }
 
 
