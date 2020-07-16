@@ -120,6 +120,15 @@ function clickUtente() {
   $('.contact').removeClass('active');
   $(this).addClass('active');
 
+  var contact = $(this).children('.logo-contact').clone();
+  var name = $(this).children('.contact-information').children('.name').clone();
+  var target = $('.logo-contact-speaker')
+  var target2 = $('#name');
+
+  target.html(contact);
+  target2.html(name);
+  $('#last-access').show();
+
   var contactDataValue = $(this).data('id');
   var userMex = $('.user-side');
   var speakerMex = $('.speaker-side');
@@ -146,9 +155,12 @@ function clickUtente() {
     var speaker = $(this);
     var speakerMexDataValue = $(speaker).data('id');
 
+
     if (speakerMexDataValue == contactDataValue) {
 
+
       speaker.addClass('active');
+
 
     } else {
 
@@ -165,6 +177,7 @@ function showContactChat() {
   $(document).on('click', '.contact', clickUtente);
 
 };
+
 
 //funzione per cancellare il messaggio
 function destroyMessageClick() {
