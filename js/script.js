@@ -74,7 +74,7 @@ function showOptionMex() {
 
   $(document).on('click', '.fa-chevron-down', function() {
 
-    $(this).find('.option').toggleClass('hide');
+    $(this).siblings('.option').toggleClass('hide');
 
   });
 
@@ -167,8 +167,18 @@ function showContactChat() {
 };
 
 //funzione per cancellare il messaggio
+function destroyMessageClick() {
 
+  $(document).on('click', '.mex-delete', deleteMessage);
 
+};
+
+function deleteMessage() {
+
+  var destroy = $(this);
+  var message = destroy.parents('.destroy');
+  message.remove();
+}
 
 
 
@@ -191,6 +201,7 @@ function init() {
   showOptionMex();
   showSearchContacts();
   showContactChat();
+  destroyMessageClick();
 };
 
 
