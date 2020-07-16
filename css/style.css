@@ -9,7 +9,6 @@ p, span {
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* <!-- Contenitore generale --> */
 .wrapper {
   height: 100vh;
@@ -100,7 +99,6 @@ main {
   border-bottom: 1px solid lightgrey;
 }
 
-
 .search .search-logo {
   font-size: 1.2rem;
   color: grey;
@@ -164,6 +162,7 @@ main {
   font-size: 0.8rem;
   color: grey;
 }
+
 /* <!-- sezione nav e corpo chat --> */
 #main-content {
   float: left;
@@ -226,8 +225,6 @@ main {
   background-size: cover;
 }
 
-
-
 .speaker-side {
   display: none;
   float: left;
@@ -252,6 +249,7 @@ main {
   margin-bottom: 80px;
   background-color: #fff;
 }
+
 .speaker-mex i, .user-mex i {
   display: none;
 }
@@ -296,6 +294,7 @@ main {
 .user-mex .option{
   right: 0;
 }
+
 .mex-info {
   margin-bottom: 10px;
 }
@@ -337,6 +336,7 @@ main {
   font-size: 1.5rem;
   color: grey;
 }
+
 #message-box .txt-box {
   width: 95%;
 }
@@ -355,8 +355,6 @@ main {
   font-size: 1.5rem;
   color: grey;
 }
-
-
 
 #message-box .send-btn  img {
   height: 23px;

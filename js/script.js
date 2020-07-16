@@ -6,7 +6,7 @@ function showButtonSend() {
     $('.send-btn .record').addClass('hide');
   });
 
-}
+};
 
 
 //funzione per invio mex utente con click
@@ -29,9 +29,9 @@ function showUserMexClick() {
 
     showSpeakerMex();
   });
-}
+};
 
-//funzione per invio mex utente con invio
+//funzione per invio mex utente con keyup
 function showUserMexKey() {
   $('#txt-form').keyup(function() {
     if ( event.which == 13 ) {
@@ -51,8 +51,7 @@ function showUserMexKey() {
       showSpeakerMex();
     }
   })
-}
-
+};
 
 //funzione per invio messaggio interlocutore
 function showSpeakerMex() {
@@ -67,7 +66,7 @@ function showSpeakerMex() {
 
   }, 1000);
 
-}
+};
 
 //funzione per mostrare le opzioni del messaggio
 function showOptionMex() {
@@ -86,7 +85,7 @@ function getActualHour() {
   var date = new Date();
   return date.getHours() + ':' + date.getMinutes();
 
-}
+};
 
 //funzione per ricerca contatti
 function showSearchContacts() {
@@ -94,8 +93,7 @@ function showSearchContacts() {
   var target = $('#search-bar');
   target.keyup(searchKeyup);
 
-}
-
+};
 function searchKeyup() {
 
   var input = $(this);
@@ -112,9 +110,14 @@ function searchKeyup() {
     }
   })
 
-}
+};
 
 //funzione per cambiare utente e chat
+function showContactChat() {
+
+  $(document).on('click', '.contact', clickUtente);
+
+};
 function clickUtente() {
 
   $('.contact').removeClass('active');
@@ -172,13 +175,6 @@ function clickUtente() {
 
 };
 
-function showContactChat() {
-
-  $(document).on('click', '.contact', clickUtente);
-
-};
-
-
 //funzione per cancellare il messaggio
 function destroyMessageClick() {
 
@@ -193,7 +189,7 @@ function deleteMessage() {
 
   message.remove();
 
-}
+};
 
 
 
