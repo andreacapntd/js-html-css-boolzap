@@ -51,6 +51,7 @@ main {
   float: left;
   width: 350px;
   height: 100%;
+  overflow:auto;
   background-color: #ededed;
 }
 
